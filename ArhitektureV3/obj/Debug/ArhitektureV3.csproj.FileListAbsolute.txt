@@ -1,0 +1,15 @@
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\ArhitektureV3.dll.config
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\ArhitektureV3.dll
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\ArhitektureV3.pdb
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\obj\Debug\ArhitektureV3.csprojAssemblyReference.cache
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\obj\Debug\ArhitektureV3.dll
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\obj\Debug\ArhitektureV3.pdb
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\Newtonsoft.Json.dll
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\System.Net.Http.Formatting.dll
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\System.Web.Http.dll
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\System.Web.Http.WebHost.dll
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\Newtonsoft.Json.xml
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\System.Net.Http.Formatting.xml
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\System.Web.Http.xml
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\bin\System.Web.Http.WebHost.xml
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\ArhitektureV3\obj\Debug\ArhitektureV3.csproj.CopyComplete
