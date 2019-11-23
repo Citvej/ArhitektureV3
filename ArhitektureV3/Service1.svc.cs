@@ -13,39 +13,181 @@ namespace ArhitektureV3
     [ServiceBehavior]
     public class Service1 : IService1
     {
-        static User user0 = new User(0, "userName0", "pass123", false, "student1", "surname1", "student");
-        static User user1 = new User(1, "userName1", "pass1234", false, "student2", "surname1", "student");
-        static User user2 = new User(2, "userName2", "pass1235", false, "student3", "surname1", "student");
-        static User user3 = new User(3, "userName3", "pass1", false, "student4", "surname1", "student");
-        static User user4 = new User(4, "userName4", "pass123", false, "name1", "surname1", "student");
-        static User user5 = new User(5, "userName5", "pass123", false, "name1", "surname1", "student");
-        static User user6 = new User(6, "userName6", "pass123", false, "name1", "surname1", "student");
-        static User user7 = new User(7, "userName7", "pass123", true, "name1", "surname1", "profesor");
-        static User user8 = new User(8, "userName8", "pass123", true, "name1", "surname1", "profesor");
-        static User user9 = new User(9, "userName9", "pass123", true, "name1", "surname1", "referent");
 
-        static Student student1 = new Student("E0000000", user0);
-        static Student student2 = new Student("E0000001", user1);
-        static Student student3 = new Student("E0000002", user2);
-        static Student student4 = new Student("E0000003", user3);
+        //static User user0 = new User("userName0", "pass123", "student1", "surname1", "student");
+        //static User user1 = new User("userName1", "pass1234", "student2", "surname1", "student");
+        //static User user2 = new User("userName2", "pass1235", "student3", "surname1", "student");
+        //static User user3 = new User("userName3", "pass1", "student4", "surname1", "student");
+        //static User user4 = new User("userName4", "pass123", "name1", "surname1", "student");
+        //static User user5 = new User("userName5", "pass123", "name1", "surname1", "student");
+        //static User user6 = new User("userName6", "pass123", "name1", "surname1", "student");
+        //static User user7 = new User("userName7", "pass123", "name1", "surname1", "profesor");
+        //static User user8 = new User("userName8", "pass123", "name1", "surname1", "profesor");
+        //static User user9 = new User("userName9", "pass123", "name1", "surname1", "referent");
 
-        static Subject programiranje1 = new Subject(0, "Programiranje1", user7);
-        static Subject programiranje2 = new Subject(1, "Programiranje2", user8);
+        //static Student student1 = new Student("E0000000", user0);
+        //static Student student2 = new Student("E0000001", user1);
+        //static Student student3 = new Student("E0000002", user2);
+        //static Student student4 = new Student("E0000003", user3);
 
-        static Student_Subject student_subject1 = new Student_Subject(0, student1, programiranje1);
-        static Student_Subject student_subject2 = new Student_Subject(0, student1, programiranje2);
-        static Student_Subject student_subject4 = new Student_Subject(0, student2, programiranje2);
-        
-        static List<User> users = new List<User>() { user0, user1, user2, user3, user4, user5, user6, user7, user8, user9 };
-        static List<Student> students = new List<Student>() { student1, student2, student3, student4 };
-        static List<Subject> subjects = new List<Subject>() { programiranje1 ,programiranje2 };
+        //static Subject programiranje1 = new Subject("Programiranje1", user7);
+        //static Subject programiranje2 = new Subject("Programiranje2", user8);
 
-        static List<Student_Subject> razred_ucenec = new List<Student_Subject>() { student_subject1, student_subject2, student_subject4 };
+        //static Student_Subject student_subject1 = new Student_Subject(student1, programiranje1);
+        //static Student_Subject student_subject2 = new Student_Subject(student1, programiranje2);
+        //static Student_Subject student_subject4 = new Student_Subject(student2, programiranje2);
+
+        //static List<User> users = new List<User>() { user0, user1, user2, user3, user4, user5, user6, user7, user8, user9 };
+        //static List<Student> students = new List<Student>() { student1, student2, student3, student4 };
+        //static List<Subject> subjects = new List<Subject>() { programiranje1, programiranje2 };
+
+        //static List<Student_Subject> razred_ucenec = new List<Student_Subject>() { student_subject1, student_subject2, student_subject4 };
+
 
         static User loggedInUser = null;
+        static FeriContext context = new FeriContext();
+
+        public int AddStudent(string idStudent, string username, string password, string name, string surname)
+        {
+            Student student; ;
+            User user;
+
+            user = new User(username, password, name, surname, "student");
+            student = new Student(idStudent, user);
+
+            context.Students.Add(student);
+
+            return context.SaveChanges(); ;
+        }
+
+        public int AddUser(string usernam, string passwor, string name, string surname, string type)
+        {
+            User user = new User(usernam, passwor, name, surname, type);
+            context.Users.Add(user);
+            return context.SaveChanges();
+        }
+
+        public int AddSubject(string subjectName)
+        {
+            Subject subject = new Subject(subjectName, new User());
+            context.Subjects.Add(subject);
+
+            return context.SaveChanges();
+        }
+
+        public int AddStudentSubject(string idStudent, int idSubject)
+        {
+            Student st;
+            Subject su;
+            Student_Subject ss;
+            
+            st = context.Students.Find(idStudent);
+            su = context.Subjects.Find((int)idSubject);
+
+            ss = new Student_Subject(st, su);
+
+            context.Student_Subjects.Add(ss);
+            
+            return context.SaveChanges();
+        }
+
+        public int EditStudent(string idStudent,string name)
+        {
+            Student student;
+
+            student = context.Students.Find(idStudent);
+
+            if (student == null) return 0;
+
+            student.user.name = name;
+            context.Students.Attach(student);
+
+            return context.SaveChanges();
+        }
+
+        public int EditSubject(int idSubject, string name)
+        {
+            Subject subject;
+
+            subject = context.Subjects.Find(idSubject);
+
+            if (subject == null) return 0;
+
+            Console.WriteLine("Vnesi novo ime: ");
+            name = Console.ReadLine();
+
+            subject.name = name;
+            context.Subjects.Attach(subject);
+
+            return context.SaveChanges();
+        }
+
+        public int EditUser(int idUser, string name)
+        {
+            User user;
+
+            user = context.Users.Find(idUser);
+
+            if (user == null) return 0;
+
+            Console.WriteLine("Vnesi novo ime: ");
+            name = Console.ReadLine();
+
+            user.name = name;
+            context.Users.Attach(user);
+
+            return context.SaveChanges();
+        }
+
+        public int DeleteStudent(string id) 
+        {
+            Student s = context.Students.Find(id);
+            context.Students.Remove(s);
+
+            return context.SaveChanges();
+        }
+
+        public int DeleteUser(int id)
+        {
+            //var itemToRemove = context.Users.SingleOrDefault(x => x.id == id);
+            User u = context.Users.Find(id);
+            context.Users.Attach(u);
+            context.Users.Remove(u);
+
+            return context.SaveChanges();
+        }
+
+        public int DeleteSubject(int id)
+        {
+            Subject s = context.Subjects.Find(id);
+            context.Subjects.Remove(s);
+
+            return context.SaveChanges();
+        }
+
+        public int DeleteStudentSubject(int id)
+        {
+            Student_Subject ss = context.Student_Subjects.Find(id);
+            context.Student_Subjects.Remove(ss);
+
+            return context.SaveChanges();
+        }
+
+        public int AddUserToSubject(int idUser, int idSubject)
+        {
+            User u = context.Users.Find(idUser);
+            Subject s = context.Subjects.Find(idSubject);
+
+            s.izvajalec = u;
+
+            context.Subjects.Attach(s);
+
+            return context.SaveChanges();
+        }
 
         public float GetAverageNameLength()
         {
+            List<User> users = context.Users.ToList<User>();
             float result = 0f;
 
             if (loggedInUser == null) return result;
@@ -59,6 +201,8 @@ namespace ArhitektureV3
         }
         public Student GetBiggestSubject()
         {
+            List<Student_Subject> razred_ucenec = context.Student_Subjects.ToList<Student_Subject>();
+
             Student retn = new Student();
             int count;
             int max = 0;
@@ -78,6 +222,8 @@ namespace ArhitektureV3
 
         public User GetLongestName()
         {
+            List<User> users = context.Users.ToList<User>();
+
             User retn = new User();
             int max = 0;
 
@@ -96,6 +242,7 @@ namespace ArhitektureV3
 
         public Student GetStudent(string id)
         {
+            List<Student> students = context.Students.ToList<Student>();
 
             if (loggedInUser == null) return new Student();
 
@@ -107,6 +254,8 @@ namespace ArhitektureV3
 
         public List<Student> GetStudents()
         {
+            List<Student> students = context.Students.ToList<Student>();
+
             if (loggedInUser == null || loggedInUser.type != userType.referent) new List<Student>();
 
             return students;
@@ -114,6 +263,8 @@ namespace ArhitektureV3
 
         public List<Student> GetStudentsFromSubject(int idSubject)
         {
+            List<Student_Subject> razred_ucenec = context.Student_Subjects.ToList<Student_Subject>();
+
             List<Student> retn = new List<Student>();
             if (loggedInUser == null || loggedInUser.type != userType.referent) return retn;
 
@@ -126,6 +277,7 @@ namespace ArhitektureV3
 
         public List<Subject> GetSubjects()
         {
+            List<Subject> subjects = context.Subjects.ToList<Subject>();
             if (loggedInUser == null || loggedInUser.type != userType.referent) new List<Subject>(); ;
 
             return subjects;
@@ -133,7 +285,9 @@ namespace ArhitektureV3
 
         public List<Subject> GetSubjectsFromStudent(int idStudent)
         {
-            List < Subject > retn = new List<Subject>();
+            List<Student_Subject> razred_ucenec = context.Student_Subjects.ToList<Student_Subject>();
+
+            List< Subject > retn = new List<Subject>();
             if (loggedInUser == null || loggedInUser.type != userType.referent) return retn;
 
             foreach (Student_Subject ss in razred_ucenec)
@@ -145,6 +299,7 @@ namespace ArhitektureV3
 
         public User Login(string username, string password)
         {
+            List<User> users = context.Users.ToList<User>();
             foreach(User user in users)
             {
                 if (user.username == username && user.password == password)

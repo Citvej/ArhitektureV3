@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -14,26 +15,29 @@ namespace ArhitektureV3
     public class User
     {
         [DataMember]
-        public int id;
+        [Key]
+        public int id { get; set; }
         [DataMember]
-        public string username;
+        public string username { get; set; }
         [DataMember]
-        public string password;
+        public string password { get; set; }
         [DataMember]
-        public bool admin;
+        public string name { get; set; }
         [DataMember]
-        public string name;
-        [DataMember]
-        public string surname;
+        public string surname { get; set; }
         [DataMember]
         public userType type { get; set; }
+        
+        
+        //public int idStudent { get; set; }
+        //[ForeignKey("Student")]
+        //public virtual Student Student { get; set; }
 
-        public User(int id, string username, string password, bool admin, string name, string surname, string type)
+
+        public User(string username, string password, string name, string surname, string type)
         {
-            this.id = id;
             this.username = username;
             this.password = password;
-            this.admin = admin;
             this.name = name;
             this.surname = surname;
 

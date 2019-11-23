@@ -33,7 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -45,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\WebServiceClient\Reference.cs">
+    <Compile Include="Connected Services\WebServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -55,43 +62,44 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\WebServiceClient\Client.WebServiceClient.Student.datasource">
+    <None Include="Connected Services\WebServiceReference\Client.WebServiceReference.Student.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WebServiceClient\Client.WebServiceClient.Subject.datasource">
+    <None Include="Connected Services\WebServiceReference\Client.WebServiceReference.Subject.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WebServiceClient\Client.WebServiceClient.User.datasource">
+    <None Include="Connected Services\WebServiceReference\Client.WebServiceReference.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WebServiceClient\Service1.wsdl" />
-    <None Include="Connected Services\WebServiceClient\Service1.xsd">
+    <None Include="Connected Services\WebServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\WebServiceReference\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WebServiceClient\Service11.xsd">
+    <None Include="Connected Services\WebServiceReference\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WebServiceClient\Service12.xsd">
+    <None Include="Connected Services\WebServiceReference\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\WebServiceClient\" />
+    <WCFMetadataStorage Include="Connected Services\WebServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WebServiceClient\Service1.disco" />
+    <None Include="Connected Services\WebServiceReference\Service1.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WebServiceClient\configuration91.svcinfo" />
+    <None Include="Connected Services\WebServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WebServiceClient\configuration.svcinfo" />
+    <None Include="Connected Services\WebServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WebServiceClient\Reference.svcmap">
+    <None Include="Connected Services\WebServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

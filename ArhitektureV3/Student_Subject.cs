@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -12,15 +14,23 @@ namespace ArhitektureV3
     public class Student_Subject
     {
         [DataMember]
-        public int id;
+        [Key]
+        public int id { get; set; }
+        
         [DataMember]
-        public Student student;
+        [Key, Column(Order = 1)]
+        public Student student { get; set; }
+        
         [DataMember]
-        public Subject subject;
+        [Key, Column(Order = 2)]
+        public Subject subject { get; set; }
 
-        public Student_Subject(int id, Student student, Subject subject)
+        //public Student Students { get; set; }
+        //public Subject Subjects { get; set; }
+
+
+        public Student_Subject(Student student, Subject subject)
         {
-            this.id = id;
             this.student = student;
             this.subject = subject;
         }

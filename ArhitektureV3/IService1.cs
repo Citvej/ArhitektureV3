@@ -30,7 +30,30 @@ namespace ArhitektureV3
         User GetLongestName();
         [OperationContract]
         float GetAverageNameLength();
-
+        [OperationContract]
+        int AddStudent(string idStudent, string username, string password, string name, string surname);
+        [OperationContract]
+        int AddSubject(string subjectName);
+        [OperationContract]
+        int AddUser(string usernam, string passwor, string name, string surname, string type);
+        [OperationContract]
+        int AddStudentSubject(string idStudent, int idSubject);
+        [OperationContract]
+        int EditStudent(string idStudent, string name);
+        [OperationContract]
+        int EditUser(int idUser, string name);
+        [OperationContract]
+        int EditSubject(int idSubject, string name);
+        [OperationContract]
+        int DeleteStudent(string id);
+        [OperationContract]
+        int DeleteUser(int id);
+        [OperationContract]
+        int DeleteSubject(int id);
+        [OperationContract]
+        public int DeleteStudentSubject(int id);
+        [OperationContract]
+        public int AddUserToSubject(int idUser, int idSubject);
 
         // TODO: Add your service operations here
     }

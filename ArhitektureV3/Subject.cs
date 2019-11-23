@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -12,15 +14,18 @@ namespace ArhitektureV3
     public class Subject
     {
         [DataMember]
-        public int idSubject;
+        [Key]
+        public int idSubject { get; set; }
         [DataMember]
-        public string name;
+        public string name { get; set; }
+        
         [DataMember]
-        public User izvajalec;
+        public User izvajalec { get; set; }
 
-        public Subject(int idSubject, string name, User izvajalec)
+        public virtual ICollection<Student_Subject> Student_Subjects { get; set; }
+
+        public Subject(string name, User izvajalec)
         {
-            this.idSubject = idSubject;
             this.name = name;
             this.izvajalec = izvajalec;
         }
