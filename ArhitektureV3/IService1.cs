@@ -15,6 +15,8 @@ namespace ArhitektureV3
         [OperationContract]
         User Login(string username, string password);
         [OperationContract]
+        List<User> GetUsers();
+        [OperationContract]
         List<Student> GetStudents();
         [OperationContract]
         List<Subject> GetSubjects();

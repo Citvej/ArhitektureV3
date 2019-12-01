@@ -75,6 +75,16 @@ namespace ArhitektureV3
             return context.SaveChanges();
         }
 
+        public List<User> GetUsers()
+        {
+            List<User> users = context.Users.ToList();
+
+            if (loggedInUser == null) return new List<User>();
+
+            return users;
+            
+        }
+
         public int AddStudentSubject(string idStudent, int idSubject)
         {
             Student st;
@@ -129,9 +139,6 @@ namespace ArhitektureV3
             user = context.Users.Find(idUser);
 
             if (user == null) return 0;
-
-            Console.WriteLine("Vnesi novo ime: ");
-            name = Console.ReadLine();
 
             user.name = name;
             context.Users.Attach(user);
@@ -256,7 +263,7 @@ namespace ArhitektureV3
         {
             List<Student> students = context.Students.ToList<Student>();
 
-            if (loggedInUser == null || loggedInUser.type != userType.referent) new List<Student>();
+            if (loggedInUser == null) new List<Student>();
 
             return students;
         }

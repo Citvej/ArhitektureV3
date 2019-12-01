@@ -1,4 +1,5 @@
-﻿using Client.WebServiceReference;
+﻿using Client.WebServiceClient;
+//using Client.WebServiceReference;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            WebServiceReference.Service1Client client = new Service1Client();
+            WebServiceClient.Service1Client client = new Service1Client();
 
 
             User login = null; ;

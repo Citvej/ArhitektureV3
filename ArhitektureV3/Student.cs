@@ -17,7 +17,6 @@ namespace ArhitektureV3
         [Key]
         public string idStudent { get; set; }
         [DataMember]
-
         //public int id { get; set; }
         //[ForeignKey("User")]
         public User user { get; set; }
