@@ -1,0 +1,5 @@
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\b\ArhitektureV3\Client\bin\Debug\Client.exe.config
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\b\ArhitektureV3\Client\bin\Debug\Client.exe
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\Client\Debug\Client.csprojAssemblyReference.cache
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\Client\Debug\Client.csproj.CopyComplete
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\Client\Debug\Client.exe

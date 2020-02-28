@@ -1,0 +1,8 @@
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\b\ArhitektureV3\ArhitektureV3\bin\ArhitektureV3.dll.config
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\b\ArhitektureV3\ArhitektureV3\bin\ArhitektureV3.dll
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\ArhitektureV3\Debug\ArhitektureV3.csprojAssemblyReference.cache
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\ArhitektureV3\Debug\ArhitektureV3.Migrations.FeriDB.resources
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\ArhitektureV3\Debug\ArhitektureV3.Migrations.FeriDB1.resources
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\ArhitektureV3\Debug\ArhitektureV3.csproj.GenerateResource.cache
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\ArhitektureV3\Debug\ArhitektureV3.csproj.CopyComplete
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\ArhitektureV3\Debug\ArhitektureV3.dll

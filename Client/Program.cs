@@ -14,7 +14,6 @@ namespace Client
         {
             WebServiceClient.Service1Client client = new Service1Client();
 
-
             User login = null; ;
             string username, password, readKey;
             int serviceNumber;

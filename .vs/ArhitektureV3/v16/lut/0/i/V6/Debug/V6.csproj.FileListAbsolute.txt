@@ -1,0 +1,15 @@
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\b\V6\V6\bin\Debug\V6.exe.config
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\b\V6\V6\bin\Debug\V6.exe
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\b\V6\V6\bin\Debug\V6.pdb
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\V6.csprojAssemblyReference.cache
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\MainWindow.g.cs
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\App.g.cs
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\V6_MarkupCompile.cache
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\V6_MarkupCompile.lref
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\MainWindow.baml
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\V6.g.resources
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\V6.Properties.Resources.resources
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\V6.csproj.GenerateResource.cache
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\V6.csproj.CopyComplete
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\V6.exe
+C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\0\i\V6\Debug\V6.pdb

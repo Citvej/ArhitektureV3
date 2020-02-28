@@ -1,8 +1,0 @@
-C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\17720\b\ArhitektureV3\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\17720\b\ArhitektureV3\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\17720\b\ArhitektureV3\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\17720\b\ArhitektureV3\UnitTestProject1\bin\Debug\UnitTestProject1.dll.config
-C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\17720\b\ArhitektureV3\UnitTestProject1\bin\Debug\UnitTestProject1.dll
-C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\17720\i\UnitTestProject1\Debug\UnitTestProject1.csprojAssemblyReference.cache
-C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\17720\i\UnitTestProject1\Debug\UnitTestProject1.csproj.CopyComplete
-C:\Users\Neven\Desktop\Faks\Arhitekture Informacijskih Sistemov\ArhitektureV3\.vs\ArhitektureV3\v16\lut\17720\i\UnitTestProject1\Debug\UnitTestProject1.dll
